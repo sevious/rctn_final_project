@@ -9,7 +9,7 @@ export const fetchMovies = () => async (dispatch) => {
     dispatch({ type: "DATA_REQUEST" });
     const response = await axios.get(`${API_URL}?s=man&apikey=${API_KEY}`);
     const data = response.data.Search;
-    console.log(data);
+    // console.log(data);
 
     dispatch({ type: "DATA_SUCCESS", payload: data });
   } catch (error) {
