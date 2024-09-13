@@ -34,7 +34,7 @@ export const searchMovies = (searchTerm) => {
     dispatch({ type: "DATA_REQUEST" });
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?apikey=${API_KEY}&s=${searchTerm}`
+        `https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchTerm}`
       );
       const data = response.data.Search;
 
