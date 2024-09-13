@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const API_URL = "https://www.omdbapi.com/?s=man&apikey=6bfc0a89"; // Replace with your actual API key
-const API_URL = "http://www.omdbapi.com/";
+const API_URL = "https://www.omdbapi.com/";
 const API_KEY = "6bfc0a89";
 
 export const fetchMovies = () => async (dispatch) => {
